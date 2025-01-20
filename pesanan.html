@@ -1,0 +1,64 @@
+<!-- bodoamattttttt -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pemesanan Tiket</title>
+  <link rel="stylesheet" href="Coba2.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">KERETA</a></li>
+        <li><a href="#" class="active">BIS</a></li>
+        <li><a href="#">PESAWAT</a></li>
+        <li><a href="#">KAPAL LAUT</a></li>
+        <li><a href="data-pemesanan.html" class="history">history</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h1>Pilih halte awal dan tujuan anda</h1>
+      <form id="pemesananForm">
+        <label for="halte-awal">Halte awal:</label>
+        <select id="halte-awal" name="halte_awal">
+          <option value="" disabled selected>Halte awal</option>
+          <option value="bekasi">bekasi</option>
+          <option value="bandung">bandung</option>
+          <option value="semarang">semarang</option>
+          <option value="depok">depok</option>
+          <option value="citayam">citayam</option>
+          <option value="lombok">lombok</option>
+        </select>
+
+        <label for="halte-tujuan">Halte tujuan:</label>
+        <select id="halte-tujuan" name="halte_tujuan">
+          <option value="" disabled selected>Halte tujuan</option>
+          <option value="bogor">bogor</option>
+          <option value="jakarta">jakarta</option>
+          <option value="tanggerang">tanggerang</option>
+          <option value="surabaya">surabaya</option>
+          <option value="banten">banten</option>
+          <option value="serang">serang</option>
+        </select>
+
+        <label for="jumlah-tiket">Jumlah tiket:</label>
+        <input type="number" id="jumlah-tiket" name="jumlah_tiket" placeholder="Jumlah tiket" min="1">
+
+        <div id="harga-container">
+          <label for="harga-tiket">Harga tiket:</label>
+          <input type="text" id="harga-tiket" name="harga_tiket" value="Rp 0" readonly>
+        </div>
+
+        <button type="submit">Pesan</button>
+      </form>
+    </section>
+  </main>
+  <script src="pemesanan.js"></script>
+</body>
+</html>
